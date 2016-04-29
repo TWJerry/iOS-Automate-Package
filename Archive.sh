@@ -49,7 +49,7 @@ gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${c
 
 
 #上传到fir 当不想上传时直接注释掉上传的代码,执行下面这行代码需要安装fir-cli，Readme.txt文档中告诉大家如何安装了。如果没有自己的公测平台，直接注释这行代码。代码中的参数ipa_path是路径，—T 是传入token,fir_token唯一的用户token，这个token决定了打出的.ipa上传到哪。-Q是生成二维码，直接在你一开始设置的output_path目录下，作者设置的是桌面，所以直接就在桌面生成可一张二维码图片。同事只要扫了这个二维码就能下载你的包了。后面的-c 参数是fir.im提交的时候一些说明，可以在fir平台上看到的。
-fir publish ${ipa_path} -T ${fir_token} -Q -c "${commit_msg}"
+#fir publish ${ipa_path} -T ${fir_token} -Q -c "${commit_msg}"
 
 #输出总用时
 echo "__Finished. Total time: ${SECONDS}s__"
