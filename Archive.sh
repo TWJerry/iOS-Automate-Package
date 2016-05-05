@@ -13,7 +13,7 @@ scheme="ALPHA"
 #指定要打包的配置名，这里直接Release就可以了。
 configuration="Release"
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
-#打什么样的包就设置什么参数。
+#打什么样的包就设置什么参数。打包之前请选择对应的证书和provision文件，否则将报错找不到对应的provision文件。
 export_method='ad-hoc'
 
 #指定项目地址 这个是你项目的路径，如果是cocoaPods管理的填写xcworkspace后缀名文件.如果不是请填写.xcodeproj文件。作者是pods管理的，所以举例是xcworkspace后缀名。
